@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+db:
+image: postgres:15
+restart: always
+environment:
+POSTGRES_USER: postgres
+POSTGRES_PASSWORD: postgres
+volumes:
+- pgdata:/var/lib/postgresql/data
+ports:
+- '5432:5432'
+
+
+backend:
+build: ./backend
+depends_on:
+- db
+environment:
+- DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/sample
+- SECRET_KEY=dev-secret
+ports:
+- '8000:8000'
+volumes:
+- ./backend/app:/app/app
+
+
+volumes:
+pgdata:

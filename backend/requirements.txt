@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy>=1.4
+asyncpg
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+langchain
+transformers>=4.30.0
+accelerate
+torch
+sentencepiece
+huggingface-hub
+langgraph
