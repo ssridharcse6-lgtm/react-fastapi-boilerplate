@@ -17,23 +17,28 @@ A minimal **full-stack starter template** with a **React frontend** and **FastAP
 
 ## 📁 Folder Structure
 
-│── frontend
-│ ├── src/
-│ │ ├── components/ProtectedRoute.tsx
-│ │ ├── pages / 1.Dashboard.tsx / 2.Login.tsx
-│ │ ├── api.ts
-│ │ ├── App.tsx
-│ │ ├── main.tsx
-│── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── auth.py
-│ │ ├── routers / auth_router.py
-│ │ ├── crud.py
-│ │ ├── models.py
-│ │ ├── database.py
-
-
+```bash
+react-fastapi-boilerplate/
+├── frontend/
+│   └── src/
+│       ├── components/
+│       │   └── ProtectedRoute.tsx
+│       ├── pages/
+│       │   ├── Dashboard.tsx
+│       │   └── Login.tsx
+│       ├── api.ts
+│       ├── App.tsx
+│       └── main.tsx
+└── backend/
+    └── app/
+        ├── main.py
+        ├── auth.py
+        ├── routers/
+        │   └── auth_router.py
+        ├── crud.py
+        ├── models.py
+        └── database.py
+```
 ---
 
 ## 🔧 Setup Instructions
